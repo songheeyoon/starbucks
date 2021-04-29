@@ -32,8 +32,7 @@ console.log("scroll")
     });
     // 버튼 보이기 #to-top 도 가능
     gsap.to(toTopEl,.2,{
-      opacity : 0,
-      display : 'none'
+      opacity : 0
     })  
   }else{
     // 배지 보이게
@@ -42,11 +41,11 @@ console.log("scroll")
       opacity : 1,
       display : 'block'
     })
+    gsap.to(toTopEl,.2,{
+      opacity : 1
+    })
   }
-  gsap.to(toTopEl,.2,{
-    opacity : 1,
-    display : 'block'
-  })
+
 
 },300));
 
